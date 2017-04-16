@@ -9,6 +9,7 @@
 /node_modules
 
 # IDEs and editors
+# test IntelliJ git commit and push
 /.idea
 *.iml
 .project
