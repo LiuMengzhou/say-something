@@ -1,3 +1,11 @@
-<h1>
-  {{title}}
-</h1>
+<div id="content">
+  <img src={{portraitPath}} id="portrait">
+  <h1 id="name">{{myName}}</h1>
+  <h3 id="description">{{description}}</h3>
+  <div *ngFor="let nav of navs" class="nav">
+    <img src={{nav.img}} width="40px" height="40px" mdTooltip={{nav.title}} [mdTooltipPosition]="position" on-mouseenter="hoverIn(nav)" on-mouseleave="hoverOut(nav)">
+  </div>
+  <div id="footer">
+    <h5>Geeook's blog. Powered by <a href="https://angular.io/" target="_blank">AngularJs</a>.</h5>
+  </div>
+</div>
