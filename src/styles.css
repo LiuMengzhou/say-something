@@ -5,3 +5,9 @@ html, body {
   background: url("background.jpg") no-repeat center center fixed;
   background-position: 0px -105px;
 }
+
+#player {
+  position: fixed;
+  left: 50px;
+  bottom: 50px;
+}

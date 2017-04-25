@@ -1,8 +1,8 @@
-#content {
+#home-content {
   padding: 250px 25% 0 25%;
 }
 
-#portrait {
+#home-portrait {
   width: 200px;
   margin: auto;
   display: block;
@@ -10,14 +10,15 @@
   box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#name, #description{
+#home-name, #home-description{
   text-align: center;
 }
 
-#name {
+#home-name {
   font-family: "Times New Roman";
 }
-#description {
+
+#home-description {
   font-weight: lighter;
   font-family: 华文行楷;
   font-size: medium;
@@ -27,27 +28,28 @@
   margin-top: 20px;
   display: inline-block;
   width: 33%;
-  padding: 0 auto;
 }
 
-.nav img {
+.nav a img{
+  width: 40px;
+  height: 40px;
   display: block;
   margin: 0 auto;
   cursor: pointer;
 }
 
-#footer {
+#home-footer {
   width: 50%;
   position: fixed;
   bottom: 0;
 }
 
-#footer > h5 {
+#home-footer > h5 {
   text-align: center;
   font-weight: lighter;
   font-family: Consolas;
 }
 
-#footer > h5 > a {
+#home-footer > h5 > a {
   text-decoration: none;
 }

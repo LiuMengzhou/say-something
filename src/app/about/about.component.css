@@ -1,0 +1,40 @@
+h1 {
+  font-family: "Times New Roman";
+  text-align: center;
+
+}
+
+h2 {
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  font-weight: lighter;
+}
+
+h3 {
+  font-weight: lighter;
+  font-family: 华文行楷;
+  font-size: medium;
+  text-align: center;
+}
+
+#about-accompany-time img {
+  width: 75px;
+  margin: auto;
+  margin-top: 120px;
+  display: block;
+}
+
+.block {
+  margin-top: 145px;
+  width: 33.3333333333333333333%;
+  float: left;
+}
+
+.about-profile img {
+  width: 180px;
+  margin: auto;
+  display: block;
+  border-radius: 50px;
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+

@@ -1,0 +1,14 @@
+<div id="home-content">
+  <img src={{portraitPath}} id="home-portrait">
+  <h1 id="home-name">{{ourName}}</h1>
+  <!--<h3 id="home-description">{{description}}</h3>-->
+  <div *ngFor="let nav of navs" class="nav">
+    <a routerLink={{nav.url}}>
+      <img src={{nav.img}} mdTooltip={{nav.title}} [mdTooltipPosition]="position"
+         on-mouseenter="hoverIn(nav)" on-mouseleave="hoverOut(nav)">
+    </a>
+  </div>
+  <div id="home-footer">
+    <h5>Geeook's blog. Powered by <a href="https://angular.io/" target="_blank">AngularJs</a>.</h5>
+  </div>
+</div>
