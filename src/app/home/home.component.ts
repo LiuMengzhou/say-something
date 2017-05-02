@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-// import { AppModule } from '../app.module'
-// import { AppComponent } from '../app.component'
 
 @Component({
   selector: 'home',
@@ -9,36 +7,40 @@ import { Component } from '@angular/core';
 })
 
 export class HomeComponent {
-  private portraitPath = "assets/images/portrait.jpg";
-  private ourName = "Kelly & Geeook";
-  // description = "You Only Live Once";
-  private navs = [
-    {title: "全部",
+  public portraitPath = "assets/images/portrait.jpg";
+  public ourName = "Kelly & Geeook";
+
+  public navs = [
+    {
+      title: "全部",
       url: "/essays",
       img: "assets/images/list.png",
       src: "assets/images/list.png",
       srcHover: "assets/images/list-clicked.png"
     },
-    {title: "分类",
+    {
+      title: "分类",
       url: "/category",
       img: "assets/images/category.png",
       src: "assets/images/category.png",
       srcHover: "assets/images/category-clicked.png"
     },
-    {title: "关于",
+    {
+      title: "关于",
       url: "/about",
       img: "assets/images/about.png",
       src: "assets/images/about.png",
       srcHover: "assets/images/about-clicked.png"
     }
   ];
-  private position = "below";
 
-  private hoverIn(nav): void {
+  public position = "below";
+
+  public hoverIn(nav): void {
     nav.img = nav.srcHover;
   }
 
-  private hoverOut(nav): void {
+  public hoverOut(nav): void {
     nav.img = nav.src;
   };
 }

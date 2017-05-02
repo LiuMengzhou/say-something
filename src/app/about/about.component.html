@@ -1,14 +1,25 @@
-<div id="about-dd-profile" class="about-profile block">
-  <img src={{ddPortraitPath}}>
-  <h1>{{ddName}}</h1>
-  <h3>{{ddWord}}</h3>
-</div>
-<div id="about-accompany-time" class="block">
-  <img src={{heartPath}} >
-  <h2>{{accompanyTime}}</h2>
-</div>
-<div id="about-my-profile" class="about-profile block">
-  <img src={{myPortraitPath}}>
-  <h1>{{myName}}</h1>
-  <h3>{{myWord}}</h3>
+<div id="about">
+  <div id="about-my-profile" class="about-profile block">
+    <img src={{myPortraitPath}}>
+    <h1>{{myName}}</h1>
+    <h3>{{myWord}}</h3>
+    <h4>我也强行94，自认为很萌的吃货。<br>萌即正义，网易云中毒者，LOL小菜比。<br>喜欢颜值高的一切，正在学习好看的设计，前端刚入门。<br>最后，右边→_→是我媳妇儿。</h4>
+    <div *ngFor="let icon of icons" class="icon">
+      <a href={{icon.url}} target="_blank">
+        <img src={{icon.img}} mdTooltip={{icon.title}} [mdTooltipPosition]="position"
+             on-mouseenter="hoverIn(icon)" on-mouseleave="hoverOut(icon)">
+      </a>
+    </div>
+  </div>
+  <div id="about-accompany-time" class="block">
+    <img src={{heartPath}} >
+    <h2 id="accompany-time-once" [hidden]="!once"></h2>
+    <h2 id="accompany-time" [hidden]="once">{{accompanyTime}}</h2>
+  </div>
+  <div id="about-dd-profile" class="about-profile block">
+    <img src={{ddPortraitPath}}>
+    <h1>{{ddName}}</h1>
+    <h3>{{ddWord}}</h3>
+    <h4>94小可爱，污污小仙女。<br>酷爱数学，喜欢算法，正在学习。<br>想读很多的书，去更远的远方。<br>对了，我不是左边的媳妇儿，他才是我媳妇儿。</h4>
+  </div>
 </div>

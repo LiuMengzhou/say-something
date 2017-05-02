@@ -1,7 +1,9 @@
+#about {
+  min-width: 675px;
+}
 h1 {
   font-family: "Times New Roman";
   text-align: center;
-
 }
 
 h2 {
@@ -13,14 +15,18 @@ h2 {
 h3 {
   font-weight: lighter;
   font-family: 华文行楷;
-  font-size: medium;
+  text-align: center;
+}
+
+h4 {
+  font-weight: lighter;
+  font-family: sans-serif;
   text-align: center;
 }
 
 #about-accompany-time img {
   width: 75px;
-  margin: auto;
-  margin-top: 120px;
+  margin: 60px auto 80px auto;
   display: block;
 }
 
@@ -38,3 +44,19 @@ h3 {
   box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.icon {
+  display: inline-block;
+  width: 25%;
+}
+
+.icon a img{
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/*.fade {*/
+  /*opacity:0.5;*/
+/*}*/
